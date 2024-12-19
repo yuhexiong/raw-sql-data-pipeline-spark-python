@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  spark_server:
+    build: .
+    container_name: spark_server
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: bash -c "python3 mysql_raw_query.py -f mysql_raw_query.yaml"
