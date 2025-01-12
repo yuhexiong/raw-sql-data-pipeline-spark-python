@@ -1,21 +1,15 @@
 # Raw SQL Data Pipeline Spark
 
-**(also provided Traditional Chinese version document [README-CH.md](README-CH.md).)**
-
-A Spark-based data pipeline transfers data from MySQL to MySQL, using raw SQL syntax for data extraction, transformation, and loading.
-
-
-
+基於 Spark 的數據管道，使用原始 SQL 語法進行數據提取、轉換和加載，將數據從 MySQL 傳輸到 MySQL。
 
 ## Overview
 
-- Language: Python
-- Data Processing Framework: Spark v3.5.1
-
+- 語言：Python
+- 數據處理框架：Spark v3.5.1
 
 ## Yaml
 
-edit connection infomation and sql query in [mysql_raw_query.yaml](./mysql_raw_query.yaml)  
+編輯 [mysql_raw_query.yaml](./mysql_raw_query.yaml) 中的連接資訊和 SQL 查詢
 
 ```yaml
 source:
@@ -34,7 +28,6 @@ sink:
   table: "Table3"
 ```
 
-
 ## Run
 
 ### Run Docker Container
@@ -42,4 +35,3 @@ sink:
 ```
 docker compose up -d
 ```
-
